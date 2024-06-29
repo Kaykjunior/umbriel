@@ -15,7 +15,7 @@ const messagesRouter = express.Router()
 
 messagesRouter.use(adaptMiddleware(makeEnsureAuthenticatedMiddleware()))
 
-messagesRouter.get('/search', adaptRoute(makeSearchMessagesController()))
+messagesRouter.get('/search_teste', adaptRoute(makeSearchMessagesController()))
 messagesRouter.get('/:id', adaptRoute(makeGetMessageDetailsController()))
 messagesRouter.post('/', adaptRoute(makeCreateMessageController()))
 messagesRouter.post(
